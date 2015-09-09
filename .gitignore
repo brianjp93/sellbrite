@@ -41,3 +41,13 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Other Files
+*.data
+!your.data
+*.pyc
+*.ipynb
+*.exe
+*.ipynb_checkpoints/
+*.csv
+*inventory.py
