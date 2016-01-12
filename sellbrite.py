@@ -143,7 +143,7 @@ class Sellbrite():
         element = self.driver.find_element_by_name("quantity")
         element.clear()
         element.send_keys(quantity)
-        element = self.driver.find_element_by_class_name("PE-inv-save")
+        element = self.driver.find_element_by_class_name("PE-inv-location-table__header")
         element = element.find_element_by_tag_name("a")
         element.click()
         self.page = sku
@@ -163,8 +163,9 @@ class Sellbrite():
         element = self.driver.find_element_by_name("quantity")
         element.clear()
         element.send_keys(new_quantity)
-        element = self.driver.find_element_by_class_name("PE-inv-save")
+        element = self.driver.find_element_by_class_name("PE-inv-location-table__header")
         element = element.find_element_by_tag_name("a")
+        print("Found save button.")
         element.click()
         self.page = sku
 
@@ -183,7 +184,7 @@ class Sellbrite():
         element = self.driver.find_element_by_name("quantity")
         element.clear()
         element.send_keys(new_quantity)
-        element = self.driver.find_element_by_class_name("PE-inv-save")
+        element = self.driver.find_element_by_class_name("PE-inv-location-table__header")
         element = element.find_element_by_tag_name("a")
         element.click()
         self.page = sku
@@ -196,7 +197,7 @@ class Sellbrite():
         element = self.driver.find_element_by_name("bin_location")
         element.clear()
         element.send_keys(bin_loc)
-        element = self.driver.find_element_by_class_name("PE-inv-save")
+        element = self.driver.find_element_by_class_name("PE-inv-location-table__header")
         element = element.find_element_by_tag_name("a")
         element.click()
         self.page = sku
